@@ -4,7 +4,7 @@ describe("index.js", () => {
       expect(saturdayFun).to.exist
     })
 
-    it("uses the default activity 'roller-skate' when no arguments are passed", function() {
+    it("uses the default activity saturdayFun when no arguments are passed", function() {
       expect(saturdayFun()).to.equal("This Saturday, I want to roller-skate!")
     })
 
@@ -41,7 +41,7 @@ describe("index.js", () => {
     it("when initialized with '||' creates a function that, when called, wraps an adjective in a highlight", function() {
       let result = wrapAdjective("||")
       let emphatic = result("a dedicated programmer")
-      expect(emphatic).to.equal("You are ||a dedicated programmer||!")
+      expect(emphatic).to.equal("You are ||a   programmer||!")
     });
   })
 })
